@@ -18,8 +18,14 @@ class CategoryController extends Controller
         return CategoryResource::collection($categories);
     }
 
-    public function show(Category $category)
+    public function show($slug)
     {
+        $category = Category::where('slug', $slug)->first();
+
+        if (!$category) {
+            return response()->json(['message' => 'Category not found'], 404);
+        }
+
         return CategoryResource::make($category);
     }
 }

@@ -1,0 +1,14 @@
+type: workspace
+model: workspace
+id: wk_2SrFWW79vi
+createdAt: 2025-11-12T09:55:39.453827928
+updatedAt: 2025-11-12T09:55:39.453828358
+authentication: {}
+authenticationType: null
+description: ''
+headers: []
+name: project-filament
+encryptionKeyChallenge: null
+settingValidateCertificates: true
+settingFollowRedirects: true
+settingRequestTimeout: 0

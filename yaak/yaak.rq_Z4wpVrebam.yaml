@@ -1,0 +1,18 @@
+type: http_request
+model: http_request
+id: rq_Z4wpVrebam
+createdAt: 2025-11-12T10:01:01.519575648
+updatedAt: 2025-11-12T10:07:16.995237835
+workspaceId: wk_2SrFWW79vi
+folderId: null
+authentication: {}
+authenticationType: null
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: Product Detail
+sortPriority: -881470673527.4966
+url: z
+urlParameters: []

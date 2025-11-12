@@ -1,0 +1,18 @@
+type: http_request
+model: http_request
+id: rq_mdJzPeyx2C
+createdAt: 2025-11-12T09:55:47.055826928
+updatedAt: 2025-11-12T09:58:17.716174721
+workspaceId: wk_2SrFWW79vi
+folderId: null
+authentication: {}
+authenticationType: null
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: Brand List
+sortPriority: -881470673527.4995
+url: ${[ APP_URL ]}/api/v1/brands
+urlParameters: []

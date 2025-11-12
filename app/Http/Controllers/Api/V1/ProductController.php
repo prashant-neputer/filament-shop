@@ -18,8 +18,14 @@ class ProductController extends Controller
         return ProductResource::collection($products);
     }
 
-    public function show(Product $product)
+    public function show($slug)
     {
+        $product = Product::where('slug', $slug)->first();
+
+        if (!$product) {
+            return response()->json(['message' => 'Product not found'], 404);
+        }
+        
         return ProductResource::make($product);
     }
 }

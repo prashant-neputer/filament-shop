@@ -1,0 +1,18 @@
+type: http_request
+model: http_request
+id: rq_uZryaqxyue
+createdAt: 2025-11-12T09:57:05.643034037
+updatedAt: 2025-11-12T09:58:12.883760023
+workspaceId: wk_2SrFWW79vi
+folderId: null
+authentication: {}
+authenticationType: null
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: Banner List
+sortPriority: -1762941347054.999
+url: ${[ APP_URL ]}/api/v1/banners
+urlParameters: []
