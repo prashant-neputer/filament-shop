@@ -1,0 +1,43 @@
+type: http_request
+model: http_request
+id: rq_yx7bVH6TCS
+createdAt: 2025-11-12T10:13:19.909273693
+updatedAt: 2025-11-12T10:32:52.601472369
+workspaceId: wk_2SrFWW79vi
+folderId: null
+authentication: {}
+authenticationType: null
+body:
+  form:
+  - enabled: true
+    id: SDt5WgXr4f
+    name: name
+    value: Prashant Malla
+  - enabled: true
+    id: yvQ9SKdD99
+    name: email
+    value: prashanone@example.com
+  - enabled: true
+    id: DJHSkqdEc8
+    name: password
+    value: password
+  - enabled: true
+    id: EHKNz8uZSv
+    name: password_confirmation
+    value: password
+  - enabled: true
+    id: XvQdpXnhIs
+    name: ''
+    value: ''
+bodyType: multipart/form-data
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: multipart/form-data
+  id: ShXjvQ3miB
+method: POST
+name: Register
+sortPriority: -550919165881.8741
+url: ${[ APP_URL ]}/api/v1/register
+urlParameters: []

@@ -1,0 +1,22 @@
+type: folder
+model: folder
+id: fl_mXbVStsPgQ
+createdAt: 2025-11-12T10:13:11.550834220
+updatedAt: 2025-11-12T10:48:22.636553268
+workspaceId: wk_2SrFWW79vi
+folderId: null
+authentication:
+  token: ${[ ACCESS_TOKEN ]}
+authenticationType: bearer
+description: ''
+headers:
+- enabled: true
+  name: Accept
+  value: application/json
+  id: qwTfWJ2Uqe
+- enabled: true
+  name: ''
+  value: ''
+  id: 6q7UFcHKKs
+name: Auth
+sortPriority: -440735330000.0

@@ -17,22 +17,26 @@ Route::prefix('v1')->group(function () {
 
     Route::get('categories', [CategoryController::class, 'index']);
     Route::get('categories/{slug}', [CategoryController::class, 'show']);
-});
-
-# auth
-Route::post('login', [AuthController::class, 'login']);
-Route::post('register', [AuthController::class, 'register']);
-
-Route::middleware('throttle:5,1')->group(function () {
-    // Route::post('password-forgot', [ForgotPasswordController::class, 'sendOtp']);
-    // Route::post('password-reset', [ForgotPasswordController::class, 'reset']);
-});
-
-Route::middleware('auth:sanctum')->group(function () {
-    Route::get('/user', function (Request $request) {
-        return $request->user();
+    
+    
+    # auth
+    Route::post('login', [AuthController::class, 'login']);
+    Route::post('register', [AuthController::class, 'register']);
+    
+    Route::middleware('throttle:5,1')->group(function () {
+        // Route::post('password-forgot', [ForgotPasswordController::class, 'sendOtp']);
+        // Route::post('password-reset', [ForgotPasswordController::class, 'reset']);
     });
     
-    Route::post('logout', [AuthController::class, 'logout']);
+    Route::middleware('auth:sanctum')->group(function () {
+        Route::get('/user', function (Request $request) {
+            return $request->user();
+        });
     
+        Route::post('/logout', [AuthController::class, 'logout']);
+        Route::post('/logout-all', [AuthController::class, 'logoutAll']);
+    });
+
+
 });
+

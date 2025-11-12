@@ -1,0 +1,39 @@
+type: http_request
+model: http_request
+id: rq_2mrJ7J7HFb
+createdAt: 2025-11-12T10:26:43.145938225
+updatedAt: 2025-11-12T10:51:35.042377939
+workspaceId: wk_2SrFWW79vi
+folderId: fl_mXbVStsPgQ
+authentication: {}
+authenticationType: null
+body:
+  form:
+  - enabled: true
+    id: yvQ9SKdD99
+    name: email
+    value: admin@example.com
+  - enabled: false
+    id: DJHSkqdEc8
+    name: password
+    value: ogi
+  - enabled: true
+    id: HXKNCIrEcZ
+    name: ''
+    value: ''
+bodyType: null
+description: ''
+headers:
+- enabled: true
+  name: Accept
+  value: application/json
+  id: yQejK0vqPt
+- enabled: true
+  name: ''
+  value: ''
+  id: Mgs9Mjj6BF
+method: POST
+name: Logout
+sortPriority: 0.002
+url: ${[ APP_URL ]}/api/v1/logout
+urlParameters: []
