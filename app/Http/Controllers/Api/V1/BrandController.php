@@ -11,7 +11,9 @@ class BrandController extends Controller
 {
     public function index()
     {
-        $brands = Brand::where('is_active', 1)->get();
+        $brands = Brand::active()
+            ->orderBy('sort_order', 'asc')
+            ->get();
 
         return BrandResource::collection($brands);
     }

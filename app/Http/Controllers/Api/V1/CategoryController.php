@@ -11,7 +11,7 @@ class CategoryController extends Controller
 {
     public function index()
     {
-        $categories = Category::where('is_active', 1)
+        $categories = Category::active()
             ->orderBy('sort_order', 'asc')
             ->get();
 

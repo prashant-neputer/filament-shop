@@ -11,7 +11,9 @@ class BannerController extends Controller
 {
     public function index()
     {
-        $banners = Banner::where('is_active', 1)->get();
+        $banners = Banner::active()
+            ->orderBy('sort_order', 'asc')
+            ->get();
 
         return BannerResource::collection($banners);
     }

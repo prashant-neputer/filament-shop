@@ -11,7 +11,7 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $products = Product::where('is_active', 1)
+        $products = Product::active()
             ->orderBy('sort_order', 'asc')
             ->get();
 
