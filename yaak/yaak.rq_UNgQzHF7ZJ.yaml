@@ -1,0 +1,18 @@
+type: http_request
+model: http_request
+id: rq_UNgQzHF7ZJ
+createdAt: 2025-11-14T08:45:36.321452050
+updatedAt: 2025-11-14T08:46:01.371273983
+workspaceId: wk_2SrFWW79vi
+folderId: fl_qmzipMTpdh
+authentication: {}
+authenticationType: null
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: List
+sortPriority: 0.0
+url: ${[ APP_URL ]}/api/v1/carts
+urlParameters: []

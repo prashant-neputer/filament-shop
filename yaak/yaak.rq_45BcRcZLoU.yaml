@@ -1,0 +1,27 @@
+type: http_request
+model: http_request
+id: rq_45BcRcZLoU
+createdAt: 2025-11-14T08:45:46.449562059
+updatedAt: 2025-11-14T09:10:52.423052658
+workspaceId: wk_2SrFWW79vi
+folderId: fl_qmzipMTpdh
+authentication: {}
+authenticationType: null
+body:
+  form:
+  - enabled: true
+    id: iumGUNWQdW
+    name: ''
+    value: ''
+bodyType: null
+description: ''
+headers:
+- enabled: true
+  name: ''
+  value: ''
+  id: UfDKHeGTjf
+method: DELETE
+name: Delete
+sortPriority: 2000.0
+url: ${[ APP_URL ]}/api/v1/carts/1
+urlParameters: []

@@ -1,0 +1,31 @@
+type: http_request
+model: http_request
+id: rq_S2GHDLmVH2
+createdAt: 2025-11-14T07:51:14.281520663
+updatedAt: 2025-11-14T08:12:26.957063492
+workspaceId: wk_2SrFWW79vi
+folderId: fl_jixgJduunF
+authentication: {}
+authenticationType: null
+body:
+  form:
+  - enabled: true
+    id: 7K6BdtDZGC
+    name: product_id
+    value: '1'
+  - enabled: true
+    id: i0ajMjhAcd
+    name: ''
+    value: ''
+bodyType: multipart/form-data
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: multipart/form-data
+  id: p6XUX5628f
+method: POST
+name: Store
+sortPriority: 0.0029
+url: ${[ APP_URL ]}/api/v1/wishlists
+urlParameters: []

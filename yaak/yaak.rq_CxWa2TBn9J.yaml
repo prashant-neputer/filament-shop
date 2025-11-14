@@ -1,0 +1,23 @@
+type: http_request
+model: http_request
+id: rq_CxWa2TBn9J
+createdAt: 2025-11-14T08:05:05.437211685
+updatedAt: 2025-11-14T08:43:10.025831708
+workspaceId: wk_2SrFWW79vi
+folderId: fl_jixgJduunF
+authentication: {}
+authenticationType: null
+body:
+  form:
+  - enabled: true
+    id: HJ8ccaI2pK
+    name: ''
+    value: ''
+bodyType: null
+description: ''
+headers: []
+method: DELETE
+name: Clear
+sortPriority: 0.0049
+url: ${[ APP_URL ]}/api/v1/wishlists
+urlParameters: []

@@ -1,0 +1,35 @@
+type: http_request
+model: http_request
+id: rq_aesW9mUapx
+createdAt: 2025-11-14T08:45:41.041270677
+updatedAt: 2025-11-14T09:06:29.048573485
+workspaceId: wk_2SrFWW79vi
+folderId: fl_qmzipMTpdh
+authentication: {}
+authenticationType: null
+body:
+  form:
+  - enabled: true
+    id: 7K6BdtDZGC
+    name: product_id
+    value: '1'
+  - enabled: true
+    id: YtjTZDwQYh
+    name: quantity
+    value: '1'
+  - enabled: true
+    id: SvR5tQFFuv
+    name: ''
+    value: ''
+bodyType: multipart/form-data
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: multipart/form-data
+  id: p6XUX5628f
+method: POST
+name: Store
+sortPriority: 1000.0
+url: ${[ APP_URL ]}/api/v1/carts
+urlParameters: []
