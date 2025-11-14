@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_aesW9mUapx
 createdAt: 2025-11-14T08:45:41.041270677
-updatedAt: 2025-11-14T09:06:29.048573485
+updatedAt: 2025-11-14T09:19:27.758181632
 workspaceId: wk_2SrFWW79vi
 folderId: fl_qmzipMTpdh
 authentication: {}
@@ -12,13 +12,13 @@ body:
   - enabled: true
     id: 7K6BdtDZGC
     name: product_id
-    value: '1'
+    value: ${[ response.body.path(request='rq_NpcP7jtESW', path=b64'JC5kYXRhWzBdW2lkXQ', behavior='smart') ]}
   - enabled: true
     id: YtjTZDwQYh
     name: quantity
     value: '1'
   - enabled: true
-    id: SvR5tQFFuv
+    id: xwJIJrAu9n
     name: ''
     value: ''
 bodyType: multipart/form-data

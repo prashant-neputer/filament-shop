@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_zUEFq6tRV3
 createdAt: 2025-11-12T09:57:26.624977054
-updatedAt: 2025-11-12T09:58:22.588017888
+updatedAt: 2025-11-14T09:14:27.170145949
 workspaceId: wk_2SrFWW79vi
 folderId: null
 authentication: {}
@@ -13,6 +13,6 @@ description: ''
 headers: []
 method: GET
 name: Category List
-sortPriority: -881470673527.4985
+sortPriority: 2000.0
 url: ${[ APP_URL ]}/api/v1/categories
 urlParameters: []

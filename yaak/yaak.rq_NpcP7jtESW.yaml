@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_NpcP7jtESW
 createdAt: 2025-11-12T10:00:45.622156583
-updatedAt: 2025-11-12T10:00:53.536228444
+updatedAt: 2025-11-14T09:14:27.175033826
 workspaceId: wk_2SrFWW79vi
 folderId: null
 authentication: {}
@@ -13,6 +13,6 @@ description: ''
 headers: []
 method: GET
 name: Product List
-sortPriority: -881470673527.4976
+sortPriority: 4000.0
 url: ${[ APP_URL ]}/api/v1/products
 urlParameters: []

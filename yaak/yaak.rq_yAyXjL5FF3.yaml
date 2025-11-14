@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_yAyXjL5FF3
 createdAt: 2025-11-12T10:27:05.817377162
-updatedAt: 2025-11-12T10:53:28.540399026
+updatedAt: 2025-11-14T09:23:34.341886056
 workspaceId: wk_2SrFWW79vi
 folderId: fl_mXbVStsPgQ
 authentication: {}
@@ -34,6 +34,6 @@ headers:
   id: BCCp7b4Fbk
 method: POST
 name: Logout All
-sortPriority: 0.003
+sortPriority: 750.0
 url: ${[ APP_URL ]}/api/v1/logout-all
 urlParameters: []

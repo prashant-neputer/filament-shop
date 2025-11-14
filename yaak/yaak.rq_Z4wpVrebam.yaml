@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_Z4wpVrebam
 createdAt: 2025-11-12T10:01:01.519575648
-updatedAt: 2025-11-12T10:07:16.995237835
+updatedAt: 2025-11-14T09:17:19.551716229
 workspaceId: wk_2SrFWW79vi
 folderId: null
 authentication: {}
@@ -13,6 +13,6 @@ description: ''
 headers: []
 method: GET
 name: Product Detail
-sortPriority: -881470673527.4966
-url: z
+sortPriority: 5000.0
+url: ${[ APP_URL ]}/api/v1/products/${[ response.body.path(request='rq_NpcP7jtESW', path=b64'JC5kYXRhWzBdW3NsdWdd', behavior='smart') ]}
 urlParameters: []

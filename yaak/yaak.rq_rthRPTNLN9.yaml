@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_rthRPTNLN9
 createdAt: 2025-11-12T10:14:35.439041159
-updatedAt: 2025-11-12T10:42:16.115426129
+updatedAt: 2025-11-14T09:14:27.179087316
 workspaceId: wk_2SrFWW79vi
 folderId: null
 authentication: {}
@@ -30,6 +30,6 @@ headers:
   id: ShXjvQ3miB
 method: POST
 name: Login
-sortPriority: -661103001763.7483
+sortPriority: 6000.0
 url: ${[ APP_URL ]}/api/v1/login
 urlParameters: []

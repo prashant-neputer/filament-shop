@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_yUzyBR2CiH
 createdAt: 2025-11-14T07:41:08.861323881
-updatedAt: 2025-11-14T07:51:11.809477722
+updatedAt: 2025-11-14T09:22:35.283948552
 workspaceId: wk_2SrFWW79vi
 folderId: fl_jixgJduunF
 authentication: {}
@@ -13,6 +13,6 @@ description: ''
 headers: []
 method: GET
 name: List
-sortPriority: 0.0019
+sortPriority: 0.0
 url: ${[ APP_URL ]}/api/v1/wishlists
 urlParameters: []

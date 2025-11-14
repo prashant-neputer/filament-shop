@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_yx7bVH6TCS
 createdAt: 2025-11-12T10:13:19.909273693
-updatedAt: 2025-11-12T11:06:18.313447716
+updatedAt: 2025-11-14T09:14:27.181291204
 workspaceId: wk_2SrFWW79vi
 folderId: null
 authentication: {}
@@ -38,6 +38,6 @@ headers:
   id: ShXjvQ3miB
 method: POST
 name: Register
-sortPriority: -550919165881.8741
+sortPriority: 7000.0
 url: ${[ APP_URL ]}/api/v1/register
 urlParameters: []

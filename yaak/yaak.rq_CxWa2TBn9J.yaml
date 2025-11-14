@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_CxWa2TBn9J
 createdAt: 2025-11-14T08:05:05.437211685
-updatedAt: 2025-11-14T08:43:10.025831708
+updatedAt: 2025-11-14T09:22:35.293882701
 workspaceId: wk_2SrFWW79vi
 folderId: fl_jixgJduunF
 authentication: {}
@@ -18,6 +18,6 @@ description: ''
 headers: []
 method: DELETE
 name: Clear
-sortPriority: 0.0049
+sortPriority: 3000.0
 url: ${[ APP_URL ]}/api/v1/wishlists
 urlParameters: []

@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_S2GHDLmVH2
 createdAt: 2025-11-14T07:51:14.281520663
-updatedAt: 2025-11-14T08:12:26.957063492
+updatedAt: 2025-11-14T09:22:35.287745056
 workspaceId: wk_2SrFWW79vi
 folderId: fl_jixgJduunF
 authentication: {}
@@ -12,9 +12,9 @@ body:
   - enabled: true
     id: 7K6BdtDZGC
     name: product_id
-    value: '1'
+    value: ${[ response.body.path(request='rq_NpcP7jtESW', path=b64'JC5kYXRhWzBdW2lkXQ', behavior='smart') ]}
   - enabled: true
-    id: i0ajMjhAcd
+    id: QZXCeAeiui
     name: ''
     value: ''
 bodyType: multipart/form-data
@@ -26,6 +26,6 @@ headers:
   id: p6XUX5628f
 method: POST
 name: Store
-sortPriority: 0.0029
+sortPriority: 1000.0
 url: ${[ APP_URL ]}/api/v1/wishlists
 urlParameters: []

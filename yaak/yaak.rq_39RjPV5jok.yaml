@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_39RjPV5jok
 createdAt: 2025-11-14T08:01:52.112256993
-updatedAt: 2025-11-14T08:42:56.038364254
+updatedAt: 2025-11-14T09:23:19.237728496
 workspaceId: wk_2SrFWW79vi
 folderId: fl_jixgJduunF
 authentication: {}
@@ -22,6 +22,6 @@ headers:
   id: UfDKHeGTjf
 method: DELETE
 name: Delete
-sortPriority: 0.0039
-url: ${[ APP_URL ]}/api/v1/wishlists/4
+sortPriority: 2000.0
+url: ${[ APP_URL ]}/api/v1/wishlists/${[ response.body.path(request='rq_yUzyBR2CiH', path=b64'JC5kYXRhWzBdW2lkXQ', behavior='smart') ]}
 urlParameters: []

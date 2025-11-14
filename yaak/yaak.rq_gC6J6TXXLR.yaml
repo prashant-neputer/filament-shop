@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_gC6J6TXXLR
 createdAt: 2025-11-12T09:58:30.389579502
-updatedAt: 2025-11-12T09:58:45.711680759
+updatedAt: 2025-11-14T09:18:28.972026672
 workspaceId: wk_2SrFWW79vi
 folderId: null
 authentication: {}
@@ -13,6 +13,6 @@ description: ''
 headers: []
 method: GET
 name: Category Detail
-sortPriority: -881470673527.4976
-url: ${[ APP_URL ]}/api/v1/categories/men
+sortPriority: 3000.0
+url: ${[ APP_URL ]}/api/v1/categories/${[ response.body.path(request='rq_zUEFq6tRV3', path=b64'JC5kYXRhWzBdW3NsdWdd', behavior='smart') ]}
 urlParameters: []

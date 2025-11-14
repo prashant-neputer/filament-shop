@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_cNXLs5ZnZA
 createdAt: 2025-11-12T10:30:20.494528128
-updatedAt: 2025-11-14T07:31:09.052148666
+updatedAt: 2025-11-14T09:23:36.337476250
 workspaceId: wk_2SrFWW79vi
 folderId: fl_mXbVStsPgQ
 authentication: {}
@@ -34,6 +34,6 @@ headers:
   id: ky7ygu2rRG
 method: GET
 name: User
-sortPriority: 0.004
+sortPriority: 250.0
 url: ${[ APP_URL ]}/api/v1/user
 urlParameters: []
