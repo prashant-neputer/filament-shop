@@ -16,6 +16,19 @@ class CategorySectionController extends Controller
         return CategorySectionResource::collection($sections);
     }
 
+    public function show($id)
+    {
+        $section = CategorySection::with('categories')->find($id);
+
+        if (!$section) {
+            return response()->json([
+                'message' => 'Category Section not found'
+            ], 404);
+        }
+
+        return CategorySectionResource::make($section);
+    }
+
     public function store(Request $request)
     {
         $validated  = $request->validate([

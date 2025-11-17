@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_XjiHDKUrYq
 createdAt: 2025-11-17T05:02:10.744290432
-updatedAt: 2025-11-17T08:05:34.046726623
+updatedAt: 2025-11-17T09:56:39.102934080
 workspaceId: wk_2SrFWW79vi
 folderId: fl_v58sPpNQFv
 authentication: {}
@@ -30,6 +30,6 @@ headers:
   id: UsJMDrSWIs
 method: POST
 name: Store
-sortPriority: 1000.0009
+sortPriority: 2000.0
 url: ${[ APP_URL ]}/api/v1/sections
 urlParameters: []
