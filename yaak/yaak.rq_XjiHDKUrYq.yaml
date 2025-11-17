@@ -1,24 +1,24 @@
 type: http_request
 model: http_request
-id: rq_rthRPTNLN9
-createdAt: 2025-11-12T10:14:35.439041159
-updatedAt: 2025-11-17T05:26:09.178214998
+id: rq_XjiHDKUrYq
+createdAt: 2025-11-17T05:02:10.744290432
+updatedAt: 2025-11-17T05:02:27.874518399
 workspaceId: wk_2SrFWW79vi
-folderId: null
+folderId: fl_v58sPpNQFv
 authentication: {}
 authenticationType: null
 body:
   form:
   - enabled: true
-    id: yvQ9SKdD99
-    name: email
-    value: test@example.com
+    id: qmQZtcwbw3
+    name: title
+    value: Header
   - enabled: true
-    id: DJHSkqdEc8
-    name: password
-    value: password
+    id: MWKKMuGVej
+    name: slug
+    value: header
   - enabled: true
-    id: xeWkXKRp8T
+    id: q9xicfDqHV
     name: ''
     value: ''
 bodyType: multipart/form-data
@@ -27,9 +27,9 @@ headers:
 - enabled: true
   name: Content-Type
   value: multipart/form-data
-  id: ShXjvQ3miB
+  id: UsJMDrSWIs
 method: POST
-name: Login
-sortPriority: 6000.0
-url: ${[ APP_URL ]}/api/v1/login
+name: Store
+sortPriority: 1000.0009
+url: ${[ APP_URL ]}/api/v1/sections
 urlParameters: []

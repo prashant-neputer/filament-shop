@@ -1,0 +1,18 @@
+type: http_request
+model: http_request
+id: rq_KT3PAi6Qk7
+createdAt: 2025-11-17T04:58:54.038398978
+updatedAt: 2025-11-17T05:04:03.915708369
+workspaceId: wk_2SrFWW79vi
+folderId: fl_v58sPpNQFv
+authentication: {}
+authenticationType: null
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: List
+sortPriority: 999.9999
+url: ${[ APP_URL ]}/api/v1/sections
+urlParameters: []

@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_yx7bVH6TCS
 createdAt: 2025-11-12T10:13:19.909273693
-updatedAt: 2025-11-14T09:14:27.181291204
+updatedAt: 2025-11-17T05:05:11.333540042
 workspaceId: wk_2SrFWW79vi
 folderId: null
 authentication: {}
@@ -16,7 +16,7 @@ body:
   - enabled: true
     id: yvQ9SKdD99
     name: email
-    value: testtest@example.com
+    value: admin@example.com
   - enabled: true
     id: DJHSkqdEc8
     name: password
@@ -26,7 +26,7 @@ body:
     name: password_confirmation
     value: password
   - enabled: true
-    id: yCgbGM58C0
+    id: 2HteY6cB3i
     name: ''
     value: ''
 bodyType: multipart/form-data

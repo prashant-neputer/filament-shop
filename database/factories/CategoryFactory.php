@@ -23,9 +23,8 @@ class CategoryFactory extends Factory
         return [
             'title' => fake()->sentence(4),
             'slug' => fake()->slug(),
-            'image' => fake()->regexify('[A-Za-z0-9]{255}'),
+            'image' => fake()->imageUrl(640, 480),
             'description' => fake()->text(),
-            'parent_id' => Category::factory(),
             'is_active' => fake()->boolean(),
             'sort_order' => fake()->word(),
         ];

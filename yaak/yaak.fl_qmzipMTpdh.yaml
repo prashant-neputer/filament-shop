@@ -2,7 +2,7 @@ type: folder
 model: folder
 id: fl_qmzipMTpdh
 createdAt: 2025-11-14T08:45:13.715594466
-updatedAt: 2025-11-14T09:22:20.359203101
+updatedAt: 2025-11-17T04:58:45.172539146
 workspaceId: wk_2SrFWW79vi
 folderId: fl_mXbVStsPgQ
 authentication: {}
@@ -10,4 +10,4 @@ authenticationType: null
 description: ''
 headers: []
 name: Cart
-sortPriority: 1000.0
+sortPriority: 3000.0

@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\IsActive;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -10,7 +11,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Category extends Model
 {
-    use HasFactory;
+    use HasFactory, IsActive;
 
     /**
      * The attributes that are mass assignable.
@@ -54,9 +55,7 @@ class Category extends Model
     public function categorySections(): BelongsToMany
     {
         return $this->belongsToMany(CategorySection::class)
-            ->using(CategoryCategorySection::class)
-            ->as('category_category_section')
             ->withPivot('id', 'category_id', 'category_section_id', 'sort_order')
-            ->withTimestamps();
+            ->withTimestamps(); 
     }
 }

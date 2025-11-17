@@ -1,0 +1,35 @@
+type: http_request
+model: http_request
+id: rq_qLahdJW8Y2
+createdAt: 2025-11-17T05:09:01.166834365
+updatedAt: 2025-11-17T05:10:58.398155064
+workspaceId: wk_2SrFWW79vi
+folderId: fl_v58sPpNQFv
+authentication: {}
+authenticationType: null
+body:
+  form:
+  - enabled: true
+    id: 7ybuMfu0kp
+    name: _method
+    value: PUT
+  - enabled: true
+    id: qmQZtcwbw3
+    name: title
+    value: Header
+  - enabled: true
+    id: MWKKMuGVej
+    name: slug
+    value: header-one
+  - enabled: true
+    id: kS3Z6DgWMx
+    name: ''
+    value: ''
+bodyType: null
+description: ''
+headers: []
+method: DELETE
+name: Delete
+sortPriority: 1000.0029
+url: ${[ APP_URL ]}/api/v1/sections/${[ response.body.path(request='rq_KT3PAi6Qk7', path=b64'JC5kYXRhWzBdW2lkXQ', behavior='smart') ]}
+urlParameters: []

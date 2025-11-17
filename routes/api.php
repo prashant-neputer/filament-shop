@@ -5,6 +5,7 @@ use App\Http\Controllers\Api\V1\BannerController;
 use App\Http\Controllers\Api\V1\BrandController;
 use App\Http\Controllers\Api\V1\CartController;
 use App\Http\Controllers\Api\V1\CategoryController;
+use App\Http\Controllers\Api\V1\CategorySectionController;
 use App\Http\Controllers\Api\V1\ProductController;
 use App\Http\Controllers\Api\V1\WishlistController;
 use Illuminate\Http\Request;
@@ -39,10 +40,12 @@ Route::prefix('v1')->group(function () {
         Route::post('/logout-all', [AuthController::class, 'logoutAll']);
 
         Route::delete('wishlists', [WishlistController::class, 'clear'])->name('wishlists.clear');
-        Route::resource('wishlists', WishlistController::class)->only('index', 'store', 'destroy');
+        Route::apiResource('wishlists', WishlistController::class)->only('index', 'store', 'destroy');
 
         Route::delete('carts', [CartController::class, 'clear']);
-        Route::resource('carts', CartController::class)->only('index', 'store', 'destroy');
+        Route::apiResource('carts', CartController::class)->only('index', 'store', 'destroy');
+
+        Route::apiResource('sections', CategorySectionController::class);
     });
 
 
