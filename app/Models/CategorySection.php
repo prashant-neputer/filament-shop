@@ -39,8 +39,8 @@ class CategorySection extends Model
 
     public function categories(): BelongsToMany
     {
-        return $this->belongsToMany(Category::class)
-            ->withPivot('id', 'category_id', 'category_section_id', 'sort_order')
+        return $this->belongsToMany(Category::class, 'category_category_sections', 'category_section_id', 'category_id')
+            ->withPivot('sort_order')
             ->withTimestamps();
     }
 }

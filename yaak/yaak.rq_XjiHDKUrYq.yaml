@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_XjiHDKUrYq
 createdAt: 2025-11-17T05:02:10.744290432
-updatedAt: 2025-11-17T05:02:27.874518399
+updatedAt: 2025-11-17T08:05:34.046726623
 workspaceId: wk_2SrFWW79vi
 folderId: fl_v58sPpNQFv
 authentication: {}
@@ -12,13 +12,13 @@ body:
   - enabled: true
     id: qmQZtcwbw3
     name: title
-    value: Header
+    value: Header Main
   - enabled: true
     id: MWKKMuGVej
     name: slug
-    value: header
+    value: header-main
   - enabled: true
-    id: q9xicfDqHV
+    id: yDk6PIFiHw
     name: ''
     value: ''
 bodyType: multipart/form-data

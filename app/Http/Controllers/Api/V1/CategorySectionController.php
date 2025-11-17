@@ -11,7 +11,7 @@ class CategorySectionController extends Controller
 {
     public function index()
     {
-        $sections = CategorySection::get();
+        $sections = CategorySection::with('categories')->get();
 
         return CategorySectionResource::collection($sections);
     }
