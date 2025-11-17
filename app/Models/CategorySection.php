@@ -4,8 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-class Brand extends Model
+class CategorySection extends Model
 {
     use HasFactory;
 
@@ -17,11 +18,9 @@ class Brand extends Model
     protected $fillable = [
         'title',
         'slug',
-        'logo',
-        'website',
+        'image',
         'description',
         'is_active',
-        'sort_order',
     ];
 
     /**
@@ -35,5 +34,14 @@ class Brand extends Model
             'id' => 'integer',
             'is_active' => 'boolean',
         ];
+    }
+
+    public function categories(): BelongsToMany
+    {
+        return $this->belongsToMany(Category::class)
+            ->using(CategoryCategorySection::class)
+            ->as('category_category_section')
+            ->withPivot('id', 'category_id', 'category_section_id', 'sort_order')
+            ->withTimestamps();
     }
 }

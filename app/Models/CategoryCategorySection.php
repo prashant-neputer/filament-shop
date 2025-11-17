@@ -4,8 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Brand extends Model
+class CategoryCategorySection extends Model
 {
     use HasFactory;
 
@@ -15,12 +16,8 @@ class Brand extends Model
      * @var array
      */
     protected $fillable = [
-        'title',
-        'slug',
-        'logo',
-        'website',
-        'description',
-        'is_active',
+        'category_id',
+        'category_section_id',
         'sort_order',
     ];
 
@@ -33,7 +30,18 @@ class Brand extends Model
     {
         return [
             'id' => 'integer',
-            'is_active' => 'boolean',
+            'category_id' => 'integer',
+            'category_section_id' => 'integer',
         ];
+    }
+
+    public function category(): BelongsTo
+    {
+        return $this->belongsTo(Category::class);
+    }
+
+    public function categorySection(): BelongsTo
+    {
+        return $this->belongsTo(CategorySection::class);
     }
 }
